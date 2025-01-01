@@ -1,0 +1,59 @@
+@media (max-width: 1200px) {
+    #form {
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    #form input[type="text"] {
+        width: 200px;
+    }
+    #form input[type="file"] {
+        width: 200px;
+    }
+    #form #select {
+        width: 200px;
+    }
+    #form #input {
+        width: 200px;
+    }
+}
+@media (max-width: 787px) {
+    #form input[type="text"] {
+        width: 90%;
+    }
+    #form input[type="file"] {
+        width: 90%;
+    }
+    #form #select {
+        width: 90%;
+    }
+    #form #input {
+        width: 90%;
+    }
+}
+@media (max-width: 767px) {
+    #form {
+        position: relative;
+        margin-top: 500px;
+    }
+    #btn-div #publish {
+        position: relative;
+        top: -240px;
+    }
+}
+@media (max-width: 576px) {
+    #form {
+        width: 400px;
+    }
+}
+@media (max-width: 444px) {
+    #form {
+        width: 100%;
+    }
+    #btn-div #publish {
+        padding: 3px 23px;
+    }
+    #btn-div #draft {
+        padding: 3px 23px;
+    }
+}

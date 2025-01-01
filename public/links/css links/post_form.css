@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: black;
+    --white-color: white;
+    --gray-color: rgb(56, 53, 53);
+    --dark-gray-color: rgb(83, 82, 82);
+    --light-gray-color: lightgray;
+    --light-blue-color: lightblue;
+    --red-color: red;
+    --success-color: green;
+}
+
+body {
+    background-color: lightgray;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 5px var(--dark-gray-color);
+}
+#form h4 {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#form input[type="text"] {
+    width: 350px;
+    margin: 5px 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+#form input[type="text"]:hover {
+    box-shadow: 0px 0px 10px var(--light-blue-color);
+}
+#form input[type="file"] {
+    width: 350px;
+    margin: 5px 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+#form input[type="file"]:hover {
+    box-shadow: 0px 0px 10px var(--light-blue-color);
+}
+#form #select {
+    width: 350px;
+    margin: 5px 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+#form #select:hover {
+    box-shadow: 0px 0px 10px var(--light-blue-color);
+}
+
+#form #input {
+    width: 350px;
+    margin: 5px 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+#form #input:hover {
+    box-shadow: 0px 0px 10px var(--light-blue-color);
+}
+#form label {
+    margin: 5px 20px;
+    font-size: 14px;
+    color: var(--dark-gray-color);
+}
+
+#btn-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+#btn-div #publish {
+    border: none;
+    outline: none;
+    padding: 5px 53px;
+    font-size: 14px;
+    background-color: var(--success-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: all 0.3s;
+}
+#btn-div #publish:hover {
+    box-shadow: 0px 0px 15px var(--light-blue-color);
+    background-color: rgb(9, 178, 9);
+}
+#btn-div #draft {
+    border: none;
+    outline: none;
+    padding: 5px 53px;
+    font-size: 14px;
+    background-color: var(--success-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: all 0.3s;
+}
+#btn-div #draft:hover {
+    box-shadow: 0px 0px 15px var(--light-blue-color);
+    background-color: rgb(9, 178, 9);
+}

@@ -1,0 +1,132 @@
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 0%;
+    }
+    .main {
+        margin-left: 0%;
+    }
+    .navbar .navbox1 .bi-justify {
+        display: none;
+    }
+    #offcanvas {
+        display: block;
+    }
+    .main {
+        width: 100%;
+    }
+    .navbar-icons #offcanvas {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    #img-sub span {
+        font-size: 10px;
+    }
+    #img-sub .p {
+        font-size: 9px;
+    }
+}
+@media (max-width: 767px) {
+    #img-sub span {
+        font-size: 15px;
+    }
+    #img-sub .p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 830px) {
+    .navbar {
+        padding: 7px 10px;
+    }
+    .nabvar-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 667px) {
+    .navbar .navbox3 {
+        display: none;
+    }
+    .navbar .navbox2 #search {
+        width: 200px;
+        margin-right: 20px;
+        background-position: 180px;
+    }
+}
+
+@media (max-width: 442px) {
+    .img-search #search {
+        display: none;
+    }
+}
+
+@media (max-width: 865px) {
+    #profile-form {
+        width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .row {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    #profile-form {
+        margin: auto;
+    }
+    #right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #right #blogs {
+        font-size: 30px;
+        font-weight: bold;
+        color: #0866ff;
+    }
+    #right #recent {
+        font-size: 30px;
+        color: #42b72a;
+    }
+    #right p {
+        color: rgb(74, 73, 73);
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 369px) {
+    #profile-form {
+        width: 300px;
+    }
+    #profile-form #input {
+        height: 40px;
+        width: 90%;
+    }
+    #profile-form #submit {
+        height: 40px;
+        font-size: 15px;
+    }
+    #profile-form #btn {
+        height: 40px;
+        width: 55%;
+        font-size: 14px;
+    }
+    #profile-form p {
+        font-size: 13px;
+        color: #0866ff;
+    }
+}
+
+@media (max-width: 319px) {
+    #profile-form {
+        width: 270px;
+    }
+    #profile-form #btn {
+        font-size: 13px;
+    }
+}

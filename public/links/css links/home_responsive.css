@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+    /* .cards {
+        height: 425px;
+    } */
+}
+
+@media (max-width: 992px) {
+    /* .cards {
+        height: 360px;
+    } */
+    #card-info h4 {
+        font-size: 18px;
+    }
+    #card-info p {
+        font-size: 11px;
+    }
+    #card-icon i {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .cards {
+        height: 425px;
+    } */
+    #card-info h4 {
+        font-size: 20px;
+    }
+    #card-info p {
+        font-size: 14px;
+    }
+    #card-icon i {
+        font-size: 12px;
+    }
+    #card-img img {
+        height: 200px;
+    }
+
+    #post-table th {
+        font-size: 13px;
+    }
+    #post-table th:nth-child(3) {
+        width: 180px;
+    }
+    #post-table td {
+        font-size: 12px;
+    }
+    #post-img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 766px) {
+    #admin-part {
+        position: relative;
+        top: -150px;
+    }
+    #admin-div {
+        position: relative;
+        top: -960px;
+    }
+    #user-div {
+        position: relative;
+        top: -1100px;
+    }
+    #user-info {
+        position: relative;
+        top: -1520px;
+    }
+    #admin-post {
+        position: relative;
+        top: -400px;
+    }
+    #adm-btn {
+        position: relative;
+        top: -580px;
+    }
+    #ad-us1 {
+        position: relative;
+        top: -1150px;
+    }
+}
+
+@media (max-width: 540px) {
+    .navbar {
+        padding: 5px 10px;
+    }
+    #navbar-menu {
+        display: none;
+    }
+    #img-div img {
+        display: none;
+    }
+    #img-div .bi-justify {
+        color: white;
+        font-size: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    #post-table th:nth-child(7) {
+        width: 100px;
+    }
+}
+
+@media (max-width: 487px) {
+    /* .cards {
+        height: 320px;
+    } */
+    #card-info h4 {
+        font-size: 18px;
+    }
+    #card-info p {
+        font-size: 11px;
+    }
+    #card-icon i {
+        font-size: 12px;
+    }
+    #card-img img {
+        height: 100px;
+    }
+
+    #post-div h3 {
+        font-size: 21px;
+    }
+    #filter-btn {
+        width: 120px;
+    }
+    .filter-menu.filter-menu-1 {
+        width: 120px;
+        height: 80px;
+    }
+    .filter-menu a {
+        padding: 2px 0px 2px 10px;
+        font-size: 12px;
+    }
+    #filter-btn button {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 440px) {
+}
+
+@media (max-width: 303px) {
+    /* .cards {
+        height: 340px;
+    } */
+}

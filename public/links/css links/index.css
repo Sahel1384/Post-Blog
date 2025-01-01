@@ -1,0 +1,397 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: black;
+    --white-color: white;
+    --gray-color: gray;
+    --light-gray-color: lightgray;
+    --light-blue-color: lightblue;
+    --red-color: red;
+    --success-color: green;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.offcanvas-start {
+    height: 100vh;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    overflow: auto;
+}
+.of-body .sidebox2 {
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    font-size: 14px;
+}
+.of-body .sidebox2 a {
+    text-decoration: none;
+    color: var(--white-color);
+    padding-left: 30px;
+    height: 30px;
+    padding-top: 4px;
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+.of-body .sidebox2 a:hover {
+    background-color: var(--light-blue-color);
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+.of-body .sidebox3 {
+    height: 10%;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.of-body .sidebox3 .sub {
+    display: flex;
+    gap: 20px;
+}
+/* offcanvas css end */
+
+.navbar {
+    background-color: rgb(0, 128, 128);
+    padding: 0px 20px;
+    border-bottom: 1px solid var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.img-search {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.img-search img {
+    width: 40px;
+    height: 40px;
+}
+.img-search #search {
+    height: 37px;
+    width: 220px;
+    background-image: url("../img/search.png");
+    background-size: 10% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 185px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 12px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.nabvar-menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+}
+.nabvar-menu ul .active::after {
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: 46px;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(255, 215, 0);
+    transition: 0.4s;
+    bottom: 0;
+}
+.nabvar-menu ul li {
+    position: relative;
+    margin-top: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nabvar-menu span {
+    color: #ffffff;
+}
+
+.nabvar-menu ul li::after {
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: 46px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 215, 0);
+    transition: 0.4s;
+    bottom: 0;
+}
+.nabvar-menu ul li:hover {
+    color: white;
+    z-index: 100;
+}
+.nabvar-menu ul li:hover::after,
+.nabvar-menu ul li:active::after {
+    width: 50px;
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-icons span {
+    font-size: 17px;
+    padding: 3px 7px;
+    color: white;
+    border-radius: 50%;
+    /* background-color: rgb(186, 181, 181); */
+}
+
+.navbar-icons img {
+    border-radius: 50%;
+}
+.navbar-icons #offcanvas {
+    display: none;
+}
+.navbar-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(0, 128, 128);
+    /* background-color: rgb(0, 128, 128); */
+    color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.5s;
+    overflow: auto;
+    top: 52.3px;
+    padding-top: 20px;
+}
+#self-info {
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+#self-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#self-info h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--white-color);
+    padding-left: 20px;
+    height: 40px;
+    padding-top: 4px;
+    transition: all 0.4s;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.sidebar a:hover {
+    background-color: rgb(144, 238, 238);
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    margin-left: 20%;
+    width: 80%;
+    height: 100vh;
+    transition: all 0.5s;
+    margin-top: 40px;
+}
+
+#account {
+    height: 450px;
+    width: 350px;
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    top: 52px;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#account.account1 {
+    opacity: 1;
+    display: block;
+}
+#account #self-inf {
+    width: 90%;
+    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    height: 100px;
+}
+#account #self-inf #self-sub {
+    display: flex;
+    padding-left: 20px;
+    gap: 0px;
+    padding-top: 10px;
+}
+#account #self-inf hr {
+    width: 85%;
+    margin: auto;
+}
+#account #self-inf #email {
+    margin-left: 68px;
+    /* font-size: 11px;
+    position: relative; */
+}
+#account #self-inf img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#account #self-inf p {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+#account-ul {
+    margin-top: 40px;
+}
+#account-ul ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bold;
+}
+#account-ul ul li {
+    padding: 9px 8px;
+    width: 220px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#account-ul ul li:hover {
+    background-color: rgb(239, 238, 238);
+}
+#account-ul li a {
+    text-decoration: none;
+    /* margin-left: 40px; */
+    font-weight: bold;
+    color: black;
+}
+#account-ul #logout {
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 500;
+    color: red;
+}
+#account-ul span {
+    margin-left: 10px;
+    color: red;
+}
+
+#profile-form {
+    width: 420px;
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px gray;
+    position: relative;
+    top: 50px;
+}
+#profile-form #input {
+    height: 45px;
+    width: 90%;
+    border-radius: 4px;
+    outline: none;
+    /* border: 1px solid lightgray; */
+    padding-left: 20px;
+    font-size: 14px;
+}
+#profile-form #input:hover {
+    box-shadow: 0px 0px 10px lightblue;
+}
+
+#profile-form #submit {
+    height: 47px;
+    width: 90%;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0866ff;
+    color: white;
+}
+#profile-form p {
+    font-size: 14px;
+    color: #0866ff;
+}
+#profile-form hr {
+    width: 90%;
+    color: rgb(54, 53, 53);
+}
+#profile-form #btn {
+    height: 45px;
+    width: 60%;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #42b72a;
+    color: white;
+}
+#profile-form #btn a {
+    text-decoration: none;
+    color: white;
+}
+#profile-form #photo {
+    height: 200px;
+}
+
+.sidebar1 {
+    background-color: #0866ff;
+}
+#texteara {
+    padding: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgray;
+}
+form {
+    width: 440px;
+    background-color: white;
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+#heading {
+    display: flex;
+    justify-content: space-between;
+}
+#heading h2 {
+    font-size: 28px;
+}
+#heading p {
+    font-size: 13px;
+    color: rgb(97, 96, 96);
+}
+#body {
+    display: flex;
+    gap: 20px;
+}
+#body #input {
+    height: 35px;
+    /* border: 1px solid rgb(204, 203, 203); */
+    outline: none;
+    font-size: 13px;
+    width: 190px;
+}
+
+#second label {
+    font-size: 14px;
+    position: relative;
+    top: -3px;
+}
+#second #radio {
+    width: 11px;
+}
+
+#submit {
+    padding: 5px 34px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(3, 195, 3);
+    color: white;
+}

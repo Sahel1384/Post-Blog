@@ -1,0 +1,68 @@
+@media (max-width: 865px) {
+  form {
+    width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  form {
+    margin: auto;
+  }
+  #right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #right #blogs {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0866ff;
+  }
+  #right #recent {
+    font-size: 30px;
+    color: #42b72a;
+  }
+  #right p {
+    color: rgb(74, 73, 73);
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 369px) {
+  form {
+    width: 300px;
+  }
+  form #input {
+    height: 40px;
+    width: 90%;
+  }
+  form #submit {
+    height: 40px;
+    font-size: 15px;
+  }
+  form #btn {
+    height: 40px;
+    width: 55%;
+    font-size: 14px;
+  }
+  form p {
+    font-size: 13px;
+    color: #0866ff;
+  }
+}
+
+@media (max-width: 319px) {
+  form {
+    width: 270px;
+  }
+  form #btn {
+    font-size: 13px;
+  }
+}

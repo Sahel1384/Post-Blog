@@ -1,0 +1,368 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: black;
+    --light-black-color: rgb(29, 27, 27);
+    --white-color: white;
+    --gray-color: gray;
+    --light-gray-color: lightgray;
+    --light-blue-color: lightblue;
+    --red-color: red;
+    --success-color: green;
+}
+body {
+    background-color: white;
+}
+.container {
+    position: relative;
+    top: 60px;
+}
+.sidebox2 ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.offcanvas-start {
+    background-color: rgb(0, 128, 128);
+    color: var(--white-color);
+}
+.sidebox2 ul li {
+    position: relative;
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.sidebox2 ul li::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(205, 3, 3);
+    transition: 0.4s;
+    bottom: 0;
+}
+.sidebox2 ul li:hover {
+    color: white;
+    z-index: 100;
+}
+.sidebox2 ul li:hover::after,
+.sidebox2 ul li:active::after {
+    width: 100%;
+}
+.sidebox2 ul li:active {
+    color: #133f6c;
+}
+
+/* post cards css start */
+.cards {
+    /* border: 1px solid rgb(182, 179, 179); */
+    box-shadow: 0px 0px 10px rgb(182, 179, 179);
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: white;
+    /* background-color: rgb(250, 240, 219); */
+}
+.img-user {
+    display: flex;
+    justify-content: space-between;
+}
+.img-user img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -6px;
+    border-radius: 50%;
+}
+#img-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-sub span {
+    color: black;
+    font-weight: 500;
+    /* font-size: 1vw; */
+}
+#img-sub p {
+    font-size: 11px;
+    margin-left: 11px;
+}
+.img-user span {
+    font-size: 13px;
+    margin-left: 10px;
+}
+.img-user i {
+    cursor: pointer;
+}
+#img-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#card-info h4 {
+    font-size: 19px;
+}
+#card-info p {
+    font-size: 14px;
+    color: rgb(109, 107, 107);
+}
+#card-img img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+#card-icon {
+    display: flex;
+    justify-content: space-between;
+}
+#card-icon i {
+    cursor: pointer;
+    position: relative;
+}
+#card-icon i[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -10%;
+    left: 0;
+}
+#card-icon p {
+    font-size: 9px;
+    text-align: center;
+    cursor: pointer;
+}
+/* post cards css end */
+
+#post-div h3 {
+    font-size: 25px;
+}
+#filter-btn {
+    width: 182px;
+    background-color: rgb(254, 253, 253);
+    z-index: 90;
+    padding: 5px 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px gray;
+}
+#filter-btn button {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: rgb(254, 253, 253);
+    font-weight: 500;
+}
+
+.filter-menu {
+    display: none;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s;
+}
+.filter-menu.filter-menu-1 {
+    width: 182px;
+    display: block;
+    height: 150px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 90;
+    background-color: white;
+    border-top: 1px solid rgb(212, 210, 210);
+    transition: all 0.5s;
+    box-shadow: 0px 0px 6px gray;
+}
+.bi-chevron-right {
+    transition: all 0.5s;
+    font-size: 13px;
+}
+.rotate {
+    transform: rotate(90deg);
+}
+.filter-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 0px 7px 25px;
+}
+.filter-menu a:hover {
+    background-color: rgb(243, 242, 242);
+    border-radius: 20px;
+    color: #133f6c;
+}
+
+#post-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#comments-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 150px; */
+}
+#comment_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#comment-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#comment-img p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+#comments-text {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding-left: 40px;
+}
+#comments-text p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.totalPost {
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0px 10px lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.totalPost .fa-money-check {
+    font-size: 40px;
+    color: #008080;
+    transition: all 0.4s;
+}
+#bi-people {
+    font-size: 40px;
+    color: #008080;
+    transition: all 0.4s;
+}
+.fa-sack-dollar {
+    font-size: 40px;
+    color: rgb(213, 166, 12);
+    transition: all 0.4s;
+}
+
+.totalPost h5 {
+    font-size: 18px;
+    transition: all 0.4s;
+}
+.totalPost:hover {
+    box-shadow: 0px 0px 10px rgb(186, 185, 185);
+    cursor: pointer;
+}
+.totalPost:hover h5 {
+    color: #008080;
+}
+
+.totalPost .fa-cable-car {
+    font-size: 40px;
+    color: rgb(59, 193, 59);
+    transition: all 0.4s;
+}
+.totalPost:hover .likes h5 {
+    color: rgb(59, 193, 59);
+}
+
+.totalPost .fa-object-group {
+    font-size: 40px;
+    color: rgb(5, 98, 152);
+    transition: all 0.4s;
+}
+
+.totalPost:hover .views h5 {
+    color: rgb(5, 98, 152);
+}
+
+#admin-table th {
+    background-color: #133f6c;
+    color: white;
+}
+
+#admin-part {
+    position: relative;
+}
+
+#admin-post th {
+    background-color: #133f6c;
+    color: white;
+}
+#admin-post {
+    margin-top: 10px;
+}
+#admin-part .btn {
+    border: none;
+    outline: none;
+    padding: 4px 20px;
+    background-color: #133f6c;
+    color: white;
+}
+#user-info th {
+    background-color: #133f6c;
+    color: white;
+}
+
+#user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#admin-div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#ad-post1 .btn {
+    border: none;
+    outline: none;
+    padding: 4px 20px;
+    background-color: #133f6c;
+    color: white;
+}
+#ad-post1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#ad-us1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#ad-us1 .btn {
+    border: none;
+    outline: none;
+    padding: 4px 20px;
+    background-color: #133f6c;
+    color: white;
+}

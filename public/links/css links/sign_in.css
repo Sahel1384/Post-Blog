@@ -1,0 +1,92 @@
+body {
+    background-color: lightgray;
+}
+.row {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form {
+    width: 420px;
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px gray;
+}
+form #input {
+    height: 45px;
+    width: 90%;
+    border-radius: 4px;
+    outline: none;
+    /* border: 1px solid lightgray; */
+    padding-left: 20px;
+    font-size: 14px;
+}
+form #input:hover {
+    box-shadow: 0px 0px 10px lightblue;
+}
+
+form #submit {
+    height: 47px;
+    width: 90%;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0866ff;
+    color: white;
+}
+form p {
+    font-size: 14px;
+    color: #0866ff;
+}
+form hr {
+    width: 90%;
+    color: rgb(54, 53, 53);
+}
+form #btn {
+    height: 45px;
+    width: 60%;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #42b72a;
+    color: white;
+}
+form #btn a {
+    text-decoration: none;
+    color: white;
+}
+
+#right #blogs {
+    font-size: 34px;
+    font-weight: bold;
+    color: #0866ff;
+}
+#right #recent {
+    font-size: 36px;
+    color: #42b72a;
+}
+#right p {
+    color: rgb(74, 73, 73);
+}
+
+#profile-form #photo {
+    height: 250px;
+}
+
+#texteara {
+    padding: 10px;
+    font-size: 14px;
+}
